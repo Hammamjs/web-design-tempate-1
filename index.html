@@ -11,14 +11,13 @@
     <!-- Css Style -->
     <link rel="stylesheet" href="css/index.css">
     <!-- Google Font -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
     <title>project-3</title>
 </head>
 <body>
 <!-- Start Header -->
-
     <header>
         <div class="container">
             <div class="logo">
@@ -27,12 +26,24 @@
             <nav>
                 <i class="fas fa-bars bar"></i>
                 <ul>
-                    <li><a href="" class = "active">Home</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Protfolio</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Pricing</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li>
+                        <a href="." class = "active">Home</a>
+                    </li>
+                    <li>
+                        <a data-section = '.services'>Services</a>
+                    </li>
+                    <li>
+                        <a href=".portfolio" data-section = '.portfolio'>Portfolio</a>
+                    </li>
+                    <li>
+                        <a href=".about " data-section = '.about'>About</a>
+                    </li>
+                    <li>
+                        <a href=".pricing" data-section=".pricing">Pricing</a>
+                    </li>
+                    <li>
+                        <a href=".contact-us" data-section=".contact-us">Contact</a>
+                    </li>
                 </ul>
             </nav>
             <div class="search">
@@ -64,7 +75,7 @@
         </ul>
     </div>
 </div>
-</div>
+</div> 
 <!-- End Lnading -->
 
 <!-- Start Services  -->
@@ -117,8 +128,18 @@
     </div>
         </div>
 </div>
+
+
+
+
 <!-- End Services  -->
+<div class="top">
+    <i class="fas fa-angle-double-up fa-2x"></i>
+</div>
+
 <!-- Start feautre -->
+
+
 <div class="feat">
     <div class="feat-img">
         <img src=".//iphone_13_PNG29.png" alt="">
@@ -130,7 +151,7 @@
         <p>Clean Code</p>
         <p>Browser Friendly</p>
     </div>
-</div>
+</div> 
 <!-- End feautre -->
 
 <!-- Start portfolio -->
@@ -141,64 +162,64 @@
     </div>
     <div class="container">
         <ul>
-            <li><a href=""  class="active">all</a></li>
-            <li><a href="">pgotography</a></li>
-            <li><a href="">app</a></li>
-            <li><a href="">web</a></li>
-            <li><a href="">print</a></li>
+            <li><span  class="active" data-type="all">all</span></li>
+            <li><span data-type = 'photography'>pgotography</a></li>
+            <li><span  data-type = 'app'>app</a></li>
+            <li><span data-type = 'web'>web</span></li>
+            <li><span data-type = 'print'>print</span></li>
         </ul>
     </div>
     <div class="images-container">
-        <div class="box">
-            <img src="image/gabriel-VANEIfZTaX8-unsplash.jpg" alt="">
+        <div class="box" data-num = '1'>
+            <img src="image/gabriel-VANEIfZTaX8-unsplash.jpg" alt="" >
             <div class="caption">
                 <h3>Awesome Image</h3>
                 <p>photography</p>
             </div>
         </div>
-        <div class="box">
-            <img src="image/hatice-yardim-oH_Plq-CFzI-unsplash.jpg" alt="">
+        <div class="box" data-num = '1'>
+            <img src="image/hatice-yardim-oH_Plq-CFzI-unsplash.jpg" alt="" >
             <div class="caption">
                 <h3>Awesome Image</h3>
                 <p>photography</p>
             </div>
         </div>
-        <div class="box">
-            <img src="image/leandra-rieger-sV-s0oOSNTY-unsplash.jpg" alt="">
+        <div class="box" data-num="2">
+            <img src="image/leandra-rieger-sV-s0oOSNTY-unsplash.jpg" alt="" >
             <div class="caption">
                 <h3>awesome image</h3>
                 <p>photography</p>
             </div>
         </div>
-        <div class="box">
+        <div class="box" data-num="2">
             <img src="image/marek-piwnicki-uxLcpEb-jvs-unsplash.jpg" alt="">
             <div class="caption">
                 <h3>Awesome Image</h3>
                 <p>photography</p>
             </div>
         </div>
-        <div class="box">
+        <div class="box" data-num="3">
             <img src="image/mariola-grobelska-8FF8ERfIa_A-unsplash (1).jpg" alt="">
             <div class="caption">
                 <h3>Awesome Image</h3>
                 <p>photography</p>
             </div>
         </div>
-        <div class="box">
+        <div class="box" data-num="3">
             <img src="image/tezos--JjhlVVrbjU-unsplash.jpg" alt="">
             <div class="caption">
                 <h3>Awesome Image</h3>
                 <p>photography</p>
             </div>
         </div>
-        <div class="box">
-            <img src="image/tezos-3-88RFifBno-unsplash.jpg" alt="">
+        <div class="box" data-num="4">
+            <img src="image/tezos-3-88RFifBno-unsplash.jpg" alt="" >
             <div class="caption">
                 <h3>Awesome Image</h3>
                 <p>photography</p>
             </div>
         </div>
-        <div class="box">
+        <div class="box" data-num="4">
             <img src="image/tezos-VeBqhCf58QA-unsplash.jpg" alt="">
             <div class="caption">
                 <h3>Awesome Image</h3>
@@ -219,7 +240,7 @@
         <p>it‘s all you need</p>
         <a href="" class="more">See More</a>
     </div>
-</div>
+</div> 
 <!-- End Video -->
 
 <!-- Start About -->
@@ -239,22 +260,22 @@
     <div class="container">
         <div class="stats-box">
             <i class="fas fa-mug-hot"></i>
-            <div class="number">250</div>
+            <div class="number" data-number = '250'>0</div>
             <p>Coffe Drinks</p>
         </div>
         <div class="stats-box">
             <i class="fas fa-folder"></i>
-            <div class="number">1,236</div>
+            <div class="number" data-number="1236">0</div>
             <p>Computed Project</p>
         </div>
         <div class="stats-box">
             <i class="far fa-envelope "></i>
-            <div class="number">1,743</div>
+            <div class="number" data-number="1743">0</div>
             <p>Mail Sort</p>
         </div>
         <div class="stats-box">
             <i class="fas fa-trophy "></i>
-            <div class="number">17</div>
+            <div class="number" data-number="17">0</div>
             <p>Award Reward</p>
         </div>
     </div>
@@ -301,19 +322,19 @@
             <div class="prog-holder">
                 <h4>Adobe</h4>
                 <div class="prog">
-                    <span style="width: 90%" data-progress ="90%"></span>
+                    <span style="width: 0" data-progress ="90%"></span>
                 </div>
                 <h4>html &amp; css</h4>
                 <div class="prog">
-                    <span style="width: 80%" data-progress ="80%"></span>
+                    <span style="width: 0" data-progress ="80%"></span>
                 </div>
                 <h4>c++</h4>
                 <div class="prog">
-                    <span style="width: 60%" data-progress ="60%"></span>
+                    <span style="width: 0" data-progress ="60%"></span>
                 </div>
                 <h4>Java script</h4>
                 <div class="prog">
-                    <span style="width: 77%" data-progress ="77%"></span>
+                    <span style="width: 0" data-progress ="77%"></span>
                 </div>
             </div>
         </div>
@@ -321,7 +342,7 @@
 </div>
 <!-- End Skills -->
 
-<!-- Start qoute -->
+Start qoute -->
 <div class="qoute">
     <div class="container">
         <q>
@@ -430,9 +451,9 @@
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat ea, quasi expedita culpa dolorum
             </p>
-        </div>
+        </div> 
         <!-- Start Contact -->
-        <div class="contact">
+            <div class="contact">
             <form action="">
                 <input name = "name" type="text" class="main-input" placeholder="Your Name">
                 <input name = "mail" type="email" class="main-input" placeholder="YOUR EMAIL">
@@ -473,5 +494,8 @@
 </div>
 </footer>
 <!-- End Footer -->
+
+
+<script src="js/index.js"></script>
 </body>
 </html>
